@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 public class TaskThree {
 
     @Scheduled(fixedDelay = 2000)
+    @Async
       public void starteBatch() throws InterruptedException {
         if ("conditionVerified".equals("conditionVerified")) {
             log.info("TaskThree Batch ausführen :" + LocalDateTime.now());
